@@ -57,6 +57,18 @@
                   {% endif %}
                   <li class="{{ active }}"><a href="{{ site.baseurl}}{{ link.url }}"> {{ link.text }} </a></li>
                   {% endfor %}
+
+                  <li class=""> <!-- fix active -->
+                    <a class="dropdown-toggle" id="dAPI" data-toggle="dropdown" data-target="#" href="{{ site.baseurl}}api.html">
+                      API
+                      <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dAPI">
+                      <li><a tabindex="-1" href="{{ site.baseurl}}api.html">v1</a></li>
+                      <li><a tabindex="-1" href="{{ site.baseurl}}api.html?v=2">v2 (experimental)</a></li>
+                    </ul>
+                  </li>
+
                 </ul>
                 {% include releasesplash.html %}
               </div>
