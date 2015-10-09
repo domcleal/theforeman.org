@@ -24,6 +24,6 @@ navigation:
 - text: Community
   url: contribute.html
 - text: Blog
-  url: blog.html
+  url: http://blog.theforeman.org
 - text: Videos
   url: media.html
